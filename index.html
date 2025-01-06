@@ -6,24 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
     <title>My travel Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/nav.css">
 </head>
 <!--tis is the body section-->
 <body>
-  <div>
-    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-    <p><span>shihab</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, dolores! Ea facere, temporibus voluptatem vero quasi consectetur recusandae dignissimos maiores animi. Eum et iusto sed ex qui enim tenetur ab quo! Itaque, iure ut!</p>
-  </div>
-  <div>
-    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-    <p><span>shihab</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, dolores! Ea facere, temporibus voluptatem vero quasi consectetur recusandae dignissimos maiores animi. Eum et iusto sed ex qui enim tenetur ab quo! Itaque, iure ut!</p>
-  </div>
-  <div>
-    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-    <p><span>shihab</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, dolores! Ea facere, temporibus voluptatem vero quasi consectetur recusandae dignissimos maiores animi. Eum et iusto sed ex qui enim tenetur ab quo! Itaque, iure ut!</p>
-  </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Index</a></li>
+        <li>
+          <a href="table.html">Table</a>
+          <ul class="dropdown">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="video.html">video</a></li>
     
-  <h1 style="display:hidden;">hello</h1>
-  <h2 style="display: inline-block;">gello</h2>
+          </ul>
+        </li>
+        <li><a href="video.html">video</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <h2>Please Fill up The From</h2>
+  <form action="">
+    <label for="Name">Your Name:
+    <input type="text" placeholder="Your Name" id="Name"></label>
+    <label for="email"> Your Email: 
+      <input type="email" name="" id="email" placeholder="Your Email ">
+    </label>
+    <fieldset>
+      <legend>pick one pitha</legend>
+      <label for="mango">
+        <input type="radio" name="fruts" id="mango">Mango</label>
+      <label for="orange">
+        <input type="radio" name="fruts" id="mango">Orange</label>
+      <label for="Apple">
+        <input type="radio" name="fruts" id="mango">Apple</label>
+
+    </fieldset>
+    <fieldset>
+      <legend>Special instruction</legend>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </fieldset>
+    <input type="reset" value="reset">
+    <input type="button" value="Submit">
+  </form>
+   </main>
+   <footer></footer>
 </body>
 </html>
